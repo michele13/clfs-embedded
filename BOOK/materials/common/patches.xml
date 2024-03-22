@@ -15,8 +15,13 @@
   fixed by the maintainer. The patches also make small modifications to
   make the packages easier to work with. The following patches will be
   needed to build a CLFS system:</para>
+  
+  <para>There aren't any patches to download at this time'</para>
 
+
+<!--
   <variablelist role="materials">
+-->
 
 <!--
     <varlistentry>
@@ -29,6 +34,7 @@
     </varlistentry>
 -->
 
+<!-- 
     <varlistentry>
       <term>Iana-Etc Update Patch - <token>&iana-etc-update-patch-size;</token>:</term>
       <listitem>
@@ -37,9 +43,11 @@
         <para>MD5 sum: <literal>&iana-etc-update-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
+-->
 
+<!--
   </variablelist>
-
+-->
   <para os="a">Total size of these patches: about <returnvalue/></para>
 
 </sect1>
