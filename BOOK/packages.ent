@@ -4,16 +4,16 @@
 
 <!-- Note: For empty *-home entities use " " not "" -->
 
-<!ENTITY binutils-version "2.27">
-<!ENTITY binutils-size "25488 KB">
-<!ENTITY binutils-url "&gnu;binutils/binutils-&binutils-version;.tar.bz2">
-<!ENTITY binutils-md5 "2869c9bf3e60ee97c74ac2a6bf4e9d68">
+<!ENTITY binutils-version "2.42">
+<!ENTITY binutils-size "26922 KB">
+<!ENTITY binutils-url "&gnu;binutils/binutils-&binutils-version;.tar.xz">
+<!ENTITY binutils-md5 "a075178a9646551379bfb64040487715">
 <!ENTITY binutils-home "http://www.gnu.org/software/binutils/">
 
-<!ENTITY busybox-version "1.24.2">
-<!ENTITY busybox-size "2019 KB">
+<!ENTITY busybox-version "1.36.1">
+<!ENTITY busybox-size "2466 KB">
 <!ENTITY busybox-url "http://busybox.net/downloads/busybox-&busybox-version;.tar.bz2">
-<!ENTITY busybox-md5 "2eaae519cac1143bcf583636a745381f">
+<!ENTITY busybox-md5 "0fc591bc9f4e365dfd9ade0014f32561">
 <!ENTITY busybox-home "http://www.busybox.net">
 
 <!ENTITY clfs-bootscripts-version "git master HEAD">
@@ -22,63 +22,63 @@
 <!ENTITY clfs-bootscripts-md5 "N/A">
 <!ENTITY clfs-bootscripts-home "https://github.com/cross-lfs/bootscripts-embedded">
 
-<!ENTITY gcc-version "6.2.0">
-<!ENTITY gcc-size "97441 KB">
-<!ENTITY gcc-url "http://gcc.gnu.org/pub/gcc/releases/gcc-&gcc-version;/gcc-&gcc-version;.tar.bz2">
-<!ENTITY gcc-md5 "9768625159663b300ae4de2f4745fcc4">
+<!ENTITY gcc-version "13.2.0">
+<!ENTITY gcc-size "85800 KB">
+<!ENTITY gcc-url "http://gcc.gnu.org/pub/gcc/releases/gcc-&gcc-version;/gcc-&gcc-version;.tar.xz">
+<!ENTITY gcc-md5 "e0e48554cc6e4f261d55ddee9ab69075">
 <!ENTITY gcc-home "http://gcc.gnu.org">
 
-<!ENTITY gmp-version "6.1.1">
-<!ENTITY gmp-size "2330 KB">
-<!ENTITY gmp-url "&gnu;gmp/gmp-&gmp-version;.tar.bz2">
-<!ENTITY gmp-md5 "4c175f86e11eb32d8bf9872ca3a8e11d">
-<!ENTITY gmp-home "http://gmplib.org/">
+<!ENTITY gmp-version "6.3.0">
+<!ENTITY gmp-size "2046 KB">
+<!ENTITY gmp-url "&gnu;gmp/gmp-&gmp-version;.tar.xz">
+<!ENTITY gmp-md5 "956dc04e864001a9c22429f761f2c283">
+<!ENTITY gmp-home "https://www.gnu.org/software/gmp/">
 
-<!ENTITY iana-etc-version "2.30">
+<!ENTITY iana-etc-version "20240125">
 <!ENTITY iana-etc-size "200 KB">
-<!ENTITY iana-etc-url "http://sethwklein.net/iana-etc-&iana-etc-version;.tar.bz2">
-<!ENTITY iana-etc-md5 "3ba3afb1d1b261383d247f46cb135ee8">
-<!ENTITY iana-etc-home "http://sethwklein.net/iana-etc">
+<!ENTITY iana-etc-url "https://github.com/Mic92/iana-etc/releases/download/&iana-etc-version;/iana-etc-&iana-etc-version;.tar.gz">
+<!ENTITY iana-etc-md5 "aed66d04de615d76c70890233081e584">
+<!ENTITY iana-etc-home "https://www.iana.org/protocols">
 
-<!ENTITY linux-dl-version "4.x">
-<!ENTITY linux-version "4.9.22">
-<!ENTITY linux-size "91034 KB">
+<!ENTITY linux-dl-version "6.x">
+<!ENTITY linux-version "6.7.4">
+<!ENTITY linux-size "138130 KB">
 <!ENTITY linux-url "&kernel;linux/kernel/v&linux-dl-version;/linux-&linux-version;.tar.xz">
-<!ENTITY linux-md5 "b6390b3abc02ef4986644fb7051b4568">
+<!ENTITY linux-md5 "370e1b6155ae63133380e421146619e0">
 <!ENTITY linux-home "http://www.kernel.org">
 
-<!ENTITY mpc-version "1.0.3">
+<!ENTITY mpc-version "1.3.1">
 <!ENTITY mpc-size "655 KB">
 <!ENTITY mpc-url "&gnu;mpc/mpc-&mpc-version;.tar.gz">
-<!ENTITY mpc-md5 "d6a1d5f8ddea3abd2cc3e98f58352d26">
+<!ENTITY mpc-md5 "5c9bc658c9fd0f940e8e3e0f09530c62">
 <!ENTITY mpc-home "http://www.multiprecision.org/">
 
-<!ENTITY mpfr-version "3.1.4">
-<!ENTITY mpfr-size "1250 KB">
-<!ENTITY mpfr-url "&gnu;mpfr/mpfr-&mpfr-version;.tar.bz2">
-<!ENTITY mpfr-md5 "b8a2f6b0e68bef46e53da2ac439e1cf4">
+<!ENTITY mpfr-version "4.2.1">
+<!ENTITY mpfr-size "1459 KB">
+<!ENTITY mpfr-url "&gnu;mpfr/mpfr-&mpfr-version;.tar.xz">
+<!ENTITY mpfr-md5 "523c50c6318dde6f9dc523bc0244690a">
 <!ENTITY mpfr-home "http://www.mpfr.org/">
 
-<!ENTITY musl-version "1.1.16">
-<!ENTITY musl-size "906 KB">
-<!ENTITY musl-url "http://www.musl-libc.org/releases/musl-&musl-version;.tar.gz">
-<!ENTITY musl-md5 "ac52ccaec6b06ab0f289d37e8436859b">
-<!ENTITY musl-home "http://musl-libc.org/">
+<!ENTITY musl-version "1.2.5">
+<!ENTITY musl-size "1055 KB">
+<!ENTITY musl-url "https://musl.libc.org/releases/musl-&musl-version;.tar.gz">
+<!ENTITY musl-md5 "ac5cfde7718d0547e224247ccfe59f18">
+<!ENTITY musl-home "https://musl.libc.org/">
 
 <!-- Beyond CLFS library packages -->
 
-<!ENTITY zlib-version "1.2.8">
-<!ENTITY zlib-size "557 KB">
-<!ENTITY zlib-url "&sourceforge;libpng/zlib-&zlib-version;.tar.gz">
-<!ENTITY zlib-md5 "44d667c142d7cda120332623eab69f40">
+<!ENTITY zlib-version "1.3.1">
+<!ENTITY zlib-size "1478 KB">
+<!ENTITY zlib-url "https://zlib.net/fossils/zlib-&zlib-version;.tar.gz">
+<!ENTITY zlib-md5 "9855b6d802d7fe5b7bd5b196a2271655">
 <!ENTITY zlib-home "http://www.zlib.net">
 
 <!-- Beyond CLFS networking packages -->
 
-<!ENTITY dropbear-version "2013.60">
-<!ENTITY dropbear-size "1547 KB">
+<!ENTITY dropbear-version "2022.83">
+<!ENTITY dropbear-size "2268 KB">
 <!ENTITY dropbear-url "http://matt.ucc.asn.au/dropbear/releases/dropbear-&dropbear-version;.tar.bz2">
-<!ENTITY dropbear-md5 "fffa2fec0c887201bed3a3cc6df7fa35">
+<!ENTITY dropbear-md5 "a75a34bcc03cacf71a2db9da3b7c94a5">
 <!ENTITY dropbear-home "http://matt.ucc.asn.au/dropbear/dropbear.html">
 
 <!ENTITY netplug-version "1.2.9.2">
@@ -89,6 +89,6 @@
 
 <!ENTITY wireless_tools-version "29">
 <!ENTITY wireless_tools-size "288 KB">
-<!ENTITY wireless_tools-url "http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.&wireless_tools-version;.tar.gz">
+<!ENTITY wireless_tools-url "https://hewlettpackard.github.io/wireless-tools/wireless_tools.&wireless_tools-version;.tar.gz">
 <!ENTITY wireless_tools-md5 "e06c222e186f7cc013fd272d023710cb">
-<!ENTITY wireless_tools-home "http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html">
+<!ENTITY wireless_tools-home "https://hewlettpackard.github.io/wireless-tools/Tools.html">
