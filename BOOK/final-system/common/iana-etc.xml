@@ -25,25 +25,9 @@
   <sect2 role="installation">
     <title>Installation of Iana-Etc</title>
 
-    <para os="a">iana-etc comes with outdated data and IANA has changed the
-    download location used to obtain up-to-date data.  Apply the following patch
-    to correct the download location:</para>
+    <para os="g">For this package, we only need to copy the files into place: </para>
 
-<screen os="b"><userinput>patch -Np1 -i ../&iana-etc-update-patch;</userinput></screen>
-
-    <para>Update the data used to the current IANA lists: 
-<screen><userinput>make get</userinput></screen>
-    </para>
-
-    <para os="d">The following command converts the raw data provided by IANA into
-    the correct formats for the <filename>/etc/protocols</filename> and
-    <filename>/etc/services</filename> data files:</para>
-
-<screen os="e"><userinput>make STRIP=yes</userinput></screen>
-
-    <para os="g">Install the package:</para>
-
-<screen os="h"><userinput>make DESTDIR=${CLFS}/targetfs install</userinput></screen>
+<screen os="h"><userinput>cp services protocols ${CLFS}/targetfs/etc</userinput></screen>
 
   </sect2>
 
