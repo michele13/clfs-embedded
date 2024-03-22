@@ -30,8 +30,9 @@
     <para os="b">Install the header files that are common to all architectures:</para>
 
 <screen os="c"><userinput>make mrproper
-make ARCH=${CLFS_ARCH} headers_check
-make ARCH=${CLFS_ARCH} INSTALL_HDR_PATH=${CLFS}/cross-tools/${CLFS_TARGET} headers_install</userinput></screen>
+make ARCH=${CLFS_ARCH} headers
+find usr/include -type f ! -name '*.h' -delete
+cp -rv usr/include ${CLFS}/cross-tools/${CLFS_TARGET}</userinput></screen>
 
   </sect2>
 

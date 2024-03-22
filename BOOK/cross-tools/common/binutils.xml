@@ -44,6 +44,7 @@ cd ../binutils-build</userinput></screen>
    --target=${CLFS_TARGET} \
    --with-sysroot=${CLFS}/cross-tools/${CLFS_TARGET} \
    --disable-nls \
+   --enable-gprofng=no \
    --disable-multilib</userinput></screen>
 
     <variablelist os="f">
