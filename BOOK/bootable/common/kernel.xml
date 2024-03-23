@@ -35,6 +35,17 @@
     kernel team recommends that this command be issued prior to each
     kernel compilation. Do not rely on the source tree being clean after
     un-tarring.</para>
+    
+    <para os="d1">
+    A good starting place for setting up the kernel configuration is to use a <emphasis>defconfig</emphasis>.
+    This will set the base configuration to a good state that takes your target system 
+    architecture into account. </para>
+    
+    <para os="d2">To list the all available default configuratinons available use this command:</para>
+
+<screen os="d3"><userinput>ARCH=${CLFS_ARCH} make help | grep defconfig</userinput></screen>
+
+   <para os="d4">Then run <command>make [your default configuration]</command> to generate the <filename>.config</filename> file.</para> 
 
     <para os="e">Configure the kernel via a menu-driven interface.  Be sure to
       enable DEVTMPFS so that <filename class="directory">/dev</filename> will
@@ -49,8 +60,7 @@
 
 <screen os="g"><userinput>make ARCH=${CLFS_ARCH} CROSS_COMPILE=${CLFS_TARGET}- menuconfig</userinput></screen>
 
-<para os="h">Alternatively, the <command>make oldconfig</command> or
-  <command>make <replaceable>${CLFS_TARGET}</replaceable>_defconfig</command>
+<para os="h">Alternatively, the <command>make oldconfig</command>
     may be more appropriate in some situations. See the
     <filename>README</filename> file for more information.</para>
 
