@@ -35,6 +35,15 @@
       </itemizedlist>
     </listitem>
 -->
+    
+    <listitem>
+      <para>March 23, 2024</para>
+      <itemizedlist>
+        <listitem>
+          <para>[michele13] - Fixed instructions for linux kernel build.</para>
+        </listitem>
+        </itemizedlist>
+    </listitem>    
     <listitem>
       <para>March 22, 2024</para>
       <itemizedlist>
