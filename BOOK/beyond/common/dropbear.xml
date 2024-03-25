@@ -40,6 +40,8 @@
     <note os="e"><para>We are just telling dropbear to use the default
         configuration plus scp.  For those who are more adventurous, edit options.h
         to further configure dropbear.</para></note>
+        
+    <important os="e1"><para>If you get a compile error regarding an <emphasis>undefined reference to `__stack_chk_fail_local'</emphasis> run <userinput>make distclean</userinput> and add <userinput>--disable-harden</userinput> to the configure command before proceding.</para></important>
 
     <para os="f">Compile the package:</para>
 
