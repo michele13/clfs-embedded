@@ -35,7 +35,23 @@
       </itemizedlist>
     </listitem>
 -->
-    
+     <listitem>
+      <para>March 25, 2024</para>
+      <itemizedlist>
+        <listitem>
+          <para>[michele13] - We can now build all busybox applets with no problems.</para>
+        </listitem>
+        <listitem>
+          <para>[michele13] - Added symlink /init pointing to bin/busybox in ${CLFS}/targetfs/.</para>
+        </listitem>
+        <listitem>
+          <para>[michele13] - Fixed instructions for unpacking gmp mpc and mpfr during the toolchain build.</para>
+        </listitem>
+        <listitem>
+          <para>[michele13] - Fixed instructions for building dropbear.</para>
+        </listitem>
+        </itemizedlist>
+    </listitem>    
     <listitem>
       <para>March 23, 2024</para>
       <itemizedlist>

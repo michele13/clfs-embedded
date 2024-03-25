@@ -44,11 +44,6 @@
 
 <screen os="g"><userinput>make ARCH="${CLFS_ARCH}" defconfig</userinput></screen>
 
-    <para os="fa">Disable building both ifplugd and inetd as they both have
-      issues building against musl:</para>
-
-<screen os="fb"><userinput>sed -i 's/\(CONFIG_\)\(.*\)\(INETD\)\(.*\)=y/# \1\2\3\4 is not set/g' .config
-sed -i 's/\(CONFIG_IFPLUGD\)=y/# \1 is not set/' .config</userinput></screen>
 
     <para os="fc">Disable the use of utmp/wtmp as musl does not support
 	    them:</para>
@@ -56,11 +51,6 @@ sed -i 's/\(CONFIG_IFPLUGD\)=y/# \1 is not set/' .config</userinput></screen>
 <screen os="fd"><userinput>sed -i 's/\(CONFIG_FEATURE_WTMP\)=y/# \1 is not set/' .config
 sed -i 's/\(CONFIG_FEATURE_UTMP\)=y/# \1 is not set/' .config</userinput></screen>
 
-    <para os="fe">Disable the use of ipsvd for both TCP and UDP as it has issues
-	    building against musl (similar to inetd's issues):</para>
-
-<screen os="ff"><userinput>sed -i 's/\(CONFIG_UDPSVD\)=y/# \1 is not set/' .config
-sed -i 's/\(CONFIG_TCPSVD\)=y/# \1 is not set/' .config</userinput></screen>
 
     <para os="h">Compile the package:</para>
 
@@ -68,8 +58,11 @@ sed -i 's/\(CONFIG_TCPSVD\)=y/# \1 is not set/' .config</userinput></screen>
 
     <para os="j">Install the package:</para>
 
-<screen os="k"><userinput>make ARCH="${CLFS_ARCH}" CROSS_COMPILE="${CLFS_TARGET}-"\
-  CONFIG_PREFIX="${CLFS}/targetfs" install</userinput></screen>
+<screen os="k">
+<userinput>make ARCH="${CLFS_ARCH}" CROSS_COMPILE="${CLFS_TARGET}-"\
+  CONFIG_PREFIX="${CLFS}/targetfs" install</userinput>
+<userinput>ln -sv bin/busybox ${CLFS}/targetfs/init</userinput>
+</screen>
 
     <para os="l">If you're going to build your kernel with modules, you will need
     to make sure <command>depmod.pl</command> is available for your host to
