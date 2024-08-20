@@ -126,6 +126,7 @@ $(ARCHS_FO):
 
 	@echo "Generating FO file of $(arch)..."
 	@mkdir -p $(FODIR)
+	$(Q)test -h $(FODIR)/images || ln -s $(TOP)/images $(FODIR)/images
 	$(Q)xsltproc --nonet -stringparam rootid "$(ROOT_ID)" \
 	  --output $(FODIR)/$(arch).fo \
 	  $(PWD)/stylesheets/clfs-pdf.xsl \
